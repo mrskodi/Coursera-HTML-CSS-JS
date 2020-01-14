@@ -1,0 +1,13 @@
+Git commands:
+-------------
+
+To Clone: git clone "<url>" .
+To check status: git status
+To pull latest: git pull
+To check history: git log
+To commit a change: git commit -m "<commit message>"
+To push a commit change: git push
+To create a branch: git checkout -b <branchname>
+To change to an existing branch: git checkout <branchname>
+To list branches: git branch -list
+  
