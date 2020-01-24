@@ -1,0 +1,59 @@
+#header-navbar{
+  background-color: #7A2751;
+}
+#header-navbar .navbar-brand{
+  color: white;
+}
+#header-navbar button{
+  background-color: white;
+}
+#header-navbar button span{
+  background-color: white;
+}
+#xs-sm-menu ul li a{
+  text-align: right;
+  font-size: 1.3em;
+  color: white;
+}
+#xs-sm-menu ul li a:hover{
+  background-color: aliceblue;
+}
+#xs-sm-menu ul li a:focus{
+  background-color: #C08C9D;
+}
+
+/* Styling the main content */
+#menu{
+  padding-top: 15px; 
+  padding-bottom: 15px;
+}
+
+#menu-content-title{
+  font-size: 1.2em;
+  padding-top: 15px;
+  text-align: center;
+  color: #fff;
+}
+#menu-content section{
+  background-color: #7A2751;  
+  color: #fff;
+}
+/* MEDIA QUERIES FOR DEVICE SIZES */
+/* XLarge Devices */
+
+/* Large Devices */
+
+/* Medium Devices */
+@media(min-width: 767px) and (max-width: 991px){
+  #xs-sm-menu{
+    display: none;
+  }
+}
+
+/* Small Devices */
+
+/* XSmall Devices */
+
+/* XXSmall devices */
+
+/**/
