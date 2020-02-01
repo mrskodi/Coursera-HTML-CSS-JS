@@ -7,7 +7,7 @@
 
     <!-- Font Awesome Kit code -->
     <script src="https://kit.fontawesome.com/6c73a64ed4.js" crossorigin="anonymous"></script>
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
@@ -38,14 +38,14 @@
           <!--Copied from website--> 
  
 
-          <div id="navbar-menu-div" class="navbar navbar-expand-md navbar-light">
-            <button class="navbar-toggler" id="collapsible-menu-button" type="button" data-toggle="collapse" data-target="#navbar-collapsible-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div id="navbar-menu-div" class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar-collapsible-menu">
               <ul class="navbar-nav mr-auto" id="navbar-list">
-                <li class="nav-item">
-                  <a href="#" onclick="$dc.loadMenuCategories();" class="nav-link">
+                <li class="nav-item" class="active">
+                  <a href="menu_categories.html" class="nav-link">
                     <span class="fas fa-carrot fa-2x fontAwesomeIcon" style="color: #61122f"></span>
                     <br>Menu
                   </a>
@@ -73,25 +73,89 @@
               </ul>
             </div>
           </div>
-      </div>      
+          <div id="phone-s-xs">
+            <a href="tel:410-602-5008">
+              <span>410-602-5008</span>
+            </a>
+          <div>
+            * We Deliver
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
 
-<!-- For small devices -->
-  <div id="phone-s-xs"> 
-    <a class="nav-link" href="tel:410-602-5008">
-      <span>410-602-5008</span>
-    </a>
-    <div id="xs-deliver"> 
-      * We deliver
-    </div>
-  </div>
+  <!-- Begin MENU CATEGORIES page -->
+  <div id="menu-content" class="container">
+    
+    <!-- Images of menu items -->
+    <section class="row">
+      <!--
+      <div class="category-tile">
+        <a href="single_category.html">
+          <img class="img-fluid" width="200px" height="200px" src="images/menu/A/A.jpg" alt="Single Category">
+          <span>Lunch</span>
+        </a>
+      </div>
 
+      <div class="category-tile">
+        <a href="single_category.html">
+          <img class="img-fluid" width="200px" height="200px" src="images/menu/B/B.jpg" alt="Single Category">
+          <span>Lunch</span>
+        </a>
+      </div>
+      
+      <div class="category-tile">
+        <a href="single_category.html">
+          <img width="200px" height="200px" src="images/menu/C/C.jpg" alt="Single Category">
+          <span>Lunch</span>
+        </a>
+      </div>
 
-  <!-- BEGIN MAIN PLACEHOLDER DIV -->
-  <div id="main-content" class="container">
-  </div>
-  <!-- END MAIN PLACEHOLDER DIV -->
+      <div class="category-tile">
+        <a href="single_category.html">
+          <img width="200px" height="200px" src="images/menu/A/A.jpg" alt="Single Category">
+          <span>Lunch</span>
+        </a>
+      </div>
+
+      <div class="category-tile">
+        <a href="single_category.html">
+          <img width="200px" height="200px" src="images/menu/B/B.jpg" alt="Single Category">
+          <span>Lunch</span>
+        </a>
+      </div>
+
+      <div class="category-tile">
+        <a href="single_category.html">
+          <img width="200px" height="200px" src="images/menu/C/C.jpg" alt="Single Category">
+          <span>Lunch</span>
+        </a>
+      </div>
+
+      <div class="category-tile">
+        <a href="single_category.html">
+          <img width="200px" height="200px" src="images/menu/A/A.jpg" alt="Single Category">
+          <span>Lunch</span>
+        </a>
+      </div>
+
+      <div class="category-tile">
+        <a href="single_category.html">
+          <img width="200px" height="200px" src="images/menu/B/B.jpg" alt="Single Category">
+          <span>Lunch</span>
+        </a>
+      </div>
+
+      <div class="category-tile">
+        <a href="single_category.html">
+          <img width="200px" height="200px" src="images/menu/C/C.jpg" alt="Single Category">
+          <span>Lunch</span>
+        </a>
+      </div>
+      -->
+    </section>
+  </div> <!-- End MAIN-CATEGORIES section -->
   
   <!-- Begin FOOTER -->
   <footer class="card-footer">
@@ -132,8 +196,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://davids-restaurant.herokuapp.com/categories.json" type="JavaScript"></script>
-    <script src="js/ajax-utils.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

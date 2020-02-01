@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<div class="jumbotron">
+  <img id="jumbotron-img" src="images/jumbotron_1200.jpg" alt="Jumbotron image" class="img-fluid">
+</div> <!-- Endof JUMBOTRON -->
+
+<!-- Menu, Special and map tile -->
+<div class="row" id="home-tile">
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+    <a href="#" onclick="$dc.loadMenuCategories();">
+      <div id="menu-tile">
+        <span>Menu</span>
+      </div>
+    </a>
+  </div> 
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+    <a href="#" onclick="$dc.onloadMenuItems({{randomCategoryShortName}});">
+      <div id="specials-tile">
+        <span>Specials</span>
+      </div>
+    </a>
+  </div>
+  <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12"> 
+    <a href="https://goo.gl/maps/hW1tixhd1ASh4bNAA">
+      <div id="map-tile">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.6763749481815!2d-76.71384018496285!3d39.363564726936325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81a14e7817803%3A0xab20a0e99daa17ea!2sDavid%20Chu&#39;s%20China%20Bistro!5e0!3m2!1sen!2sus!4v1579523461917!5m2!1sen!2sus" width="100%%" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <span>Map</span>
+      </div>
+    </a>
+  </div> 
+</div> <!--End HOME TILE -->

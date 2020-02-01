@@ -1,108 +1,421 @@
 body{
-  color: #fff;
   background-color: #61122f;
-  font-size: 16px;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Oxygen', sans-serif;;
+}
+#main-header{ /*Below 440 px wide, the header is smaller than the viewport width*/
+  color: white;
 }
 
-#header-nav{
+#nav-header{ 
+  height: 170px;
+  width: 100%;
   background-color: #f6b319;
-  border-radius: 0;
-  border: 0;
-  height: 10em;
+  padding-right: 0px;
+  padding-left: 0px;
 }
-
+#nav-header .container{
+  height: 100%;
+  width: 100%;
+}
+.navbar-brand{
+  padding: 2px;
+  width: 60%;
+  float: left;
+}
 #logo-img{
   background: url(../images/restaurant-logo_large.png) no-repeat;
   width: 150px;
   height: 150px;
 }
-
-.navbar-brand{
-  padding: 25px;
-}
-
-.navbar-brand h1{
-  font-family: 'Lora', serif;
-  color: #557c3e;
-  font-size: 1.5em;
+.navbar-brand h1{ /* Styling the title "David Chu's China Bistro" */
   text-transform: uppercase;
+  font-family: 'Lora', serif;
+  color: #557C3E;
+  font-size: 1.5em;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: .75;
+  line-height: 1.5;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-
-.navbar-brand a:hover, .navbar-brand a:focus{
+.navbar-brand span{ /* Styling Kosher Certified */
+  color: #000000;
+  text-transform: uppercase;
+  font-size: .6em;
+}
+.navbar-brand a:hover, navbar-brand a:focus{
   text-decoration: none;
 }
-
-.navbar-brand p { /*Kosher Certified*/
-  color: #000;
-  text-transform: uppercase;
-  font-size: .7em;
-  margin-top: 15px;
+#nav-collapsible-menu{
+  height: 100%;
+  background-color: white;
 }
-
-.navbar-brand p span{ /*Star-K*/
-  vertical-align: middle; 
-}
-
-/*
-#collapsiblenav{
-  float: right;
-}*/
-#nav-list{
-  margin-top: 20px;
-}
-#nav-list a{
-  color: #951c49;
-  text-align: center;
-  background-color: #f6b319;
-}
-#nav-list a:hover{
-  background-color: #E7E7E7;
-}
-#navlist a span{
-  font-size: 1.8em;
-}
-
-#phone{
-  margin-top: 5px;
-}
-#phone a{
-  text-align: center;
-  padding-bottom: 20px;
-}
-#phone div{
-  color: #557c3e;
-  text-align: center;
-  padding-right: 15px;
-}
-
-.navbar-header button.navbar-toggler{
-  border: 1px solid #61122f;
+#navbar-menu-div{
+  width: 35%;
   float: right;
 }
-.navbar-header span.navbar-toggler-icon{
+/* Styling the unordered list and its components */
+#navbar-list{
+  width: 100%;
   color: #61122f;
 }
+#navbar-list li{
+  padding: 5px;
+}
+#navbar-list li a{
+  color: #61122f;
+}
+#navbar-list li a:hover{
+  background-color: aliceblue;
+}
+#navbar-list li a:focus{
+  background-color: aliceblue;
+}
+#phone{
+  text-align: right;
+  padding-right: 0px;
+}
+#phone a{
+  font-size: 1.6em;
+}
+#phone div{
+  color: #557C3E;
+}
+#main-content .jumbotron{
+  background-size: cover;
+  padding: 0;
+}
+#main-content .jumbotron #jumbotron-img{
+  box-shadow: 0 0 50px #3F0C1f;
+  border: 2px solid #3F0C1f;
+}
 
-/*Media Query*/
+/* Styling the home-tile */
+#menu-tile, #specials-tile, #map-tile{
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1f;
+  overflow: hidden;
+  }
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile{
+  background: url("../images/menu-tile.jpg") no-repeat;
+  background-position: center;
+}
+#specials-tile{
+  background: url("../images/specials-tile.jpg") no-repeat;
+  background-position: center;
+}
+#map-tile{
+  background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+} /*End home tile styling*/
+
+/* Begin Styling footer */
+.card-footer{
+  background-color: #222;
+  margin-top: 30px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  border-top: 0;
+  opacity: 0.9;
+}
+#timings, #address, #reviews{
+  color:#fff;
+  line-height: 1.8em;
+}
+#timings > span, #address > span{
+  font-size: 1.3em;
+}
+#reviews{
+  font-style: italic;
+}
+#copyright{
+  margin:40px auto 30px auto;
+  color: #fff;
+  font-size: 1.1em;
+}
+#delivery-notice{
+  color: #277A27;
+  font-size: .75em;
+  font-weight: bold;
+  line-height: 1.6em;
+}
+#footer-content hr{
+  color: #fff;
+}
+.footer-hr2{
+  background-color: #ccc;
+}
+
+
+/* MEDIA QUERIES for different devices */
 /* Large Devices */
 @media (min-width: 1200px){
-
+  #phone-s-xs{
+    display:none;
+  }
+  #main-content .jumbotron #jumbotron-img{
+    background-image: url(../images/jumbotron_1200.jpg) no-repeat;
+  }
+  #footer-content hr{
+    display: none;
+  }
 }
-/* Medium devices */
+/* Medium Devices */
 @media (min-width: 992px) and (max-width: 1199px){
-
+  #phone a{
+    font-size: 1.2em;
+  }
+  #navbar-list li{
+    padding: 2px;
+  }
+  #phone-s-xs{
+    display:none;
+  }
+  #navbar-menu-div button{
+    float: right;
+  }
+  #main-content .jumbotron #jumbotron-img{
+    background-image: url(../images/jumbotron_992.jpg) no-repeat;
+    height: 680px;
+  }
+  #footer-content #footer-hr1{
+    display: none;
+  }
 }
+
 /* Small Devices */
 @media (min-width: 768px) and (max-width: 991px){
-  
+  #navbar-collapsible-menu br{
+    display: none;
+  }
+  #navbar-collapsible-menu #phone{
+    display: none;
+  }
+  #navbar-menu-div button{
+    float: right;
+  }
+  #logo-img{
+    background: url(../images/restaurant-logo_medium.png) no-repeat;
+    width: 100px;
+    height: 100px;
+  }
+  #phone-s-xs{
+    color: #61122f;
+    padding: 10px;
+    border-radius: 0.5px;
+  }
+  #phone-s-xs a{
+    background-color: #f6b319;
+    color: #61122f;
+    font-size: 1.5em;
+    padding-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  m /*
+  #phone-s-xs{
+    color: #61122f;
+    
+    
+  }
+  #phone-s-xs a{
+    color: #61122f;
+    font-size: 1.5em;
+    padding-top: 20px;
+    
+  }
+  */
+  .navbar-brand h1{
+    font-size: 1.2em;
+  }
+  #navbar-menu-div button{
+    float: right;
+  }
 }
-/* XSmall Devices */
+/* Extra-small Devices */
 @media (max-width: 767px){
-
+  #navbar-collapsible-menu br{
+    display: none;
+  }
+  #navbar-collapsible-menu #phone{
+    display: none;
+  }
+  /*
+  #navbar-menu-div button{
+    float: right;
+    clear: both;
+  }*/
+  .navbar-brand h1{
+    font-size: 1em;
+  }
+  #phone-s-xs{
+    color: #61122f;
+    
+  }
+  #phone-s-xs a{
+    background-color: #f6b319;
+    color: #61122f;
+    font-size: 1.5em;
+    padding-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #navbar-menu-div button{
+    float: right;
+  }
+  #menu-tile, #specials-tile{
+    margin: 0 auto 15px auto;
+    width: 360px;
+  }
+  #timings, #address{
+    text-align: center;;
+  }
+  .menu-item-title, .menu-item-description, .menu-item-price{
+    text-align: center;
+  }
 }
+
+/* Styling MENU CATEGORIES page */
+#menu-content{
+  color: #fff;
+}
+#menu-categories-title{
+  color: #fff;
+}
+#menu-categories-title div{
+  font-size: .7em;
+}
+#menu-categories-description{
+  color: #fff;
+}
+.category-tile{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  border: 2px solid #3F0C1f;
+  max-width: 200px;
+}
+.category-tile span{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  right: 0;
+  background-color: #000000;
+  opacity: .8;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2em;
+}
+.category-tile:hover{
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-categories-title + div{
+  margin-bottom: 50px;
+}
+#menu-content section .col-xl-3{
+  padding: 0;
+}
+
+/* Styling Single category page*/
+.menu-item-photo{
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto 5px;
+  border: 2px solid #3F0C1f;
+  max-width: 250px;
+}
+.menu-item-photo:hover{
+  box-shadow: 0 1px 5px 2px #cccccc;
+}
+.menu-item-photo div{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.8;
+  background-color: #000;
+  width: 100%;
+  text-align: right;
+}
+.menu-item-price{
+  margin-top: 7px;
+  font-size: 0.8em;
+}
+.menu-item-title h5{
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.menu-item-description{
+  font-size: 0.7em;
+  font-style: italic;
+  margin-top: 5px;
+}
+.col-md-6{
+  margin: 20px 0;
+}
+.hr-sm{
+  background-color: #ccc;
+  opacity: .7;
+  width: 75%;
+}
+
+/*Additions on 1/28 styling collapsible-menu-button and flosting it to right*/
+.navbar-toggler{
+  float: right;
+}
+
+.row, .text-center{
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
